@@ -1,0 +1,63 @@
+.team-card {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 20px 20px 0;
+}
+
+.team-card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-card-header-infos {
+    padding-right: 20px;
+}
+
+.team-card-title {
+    margin: 0 0 5px;
+}
+
+.close-button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.team-card-footer-infos {
+    display: flex;
+}
+
+.team-logo {
+    max-width: 150px;
+}
+
+.past-games-results {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.chip {
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.green-chip {
+    background-color: #008000;
+}
+
+.red-chip {
+    background-color: #ff0000;
+}
+
+.results-btn {
+    display: inline-block;
+    background-color: #308732;
+    padding: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}

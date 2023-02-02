@@ -1,0 +1,21 @@
+<div class="games-details-wrapper">
+    <div *ngIf="team" class="team-card">
+        <div class="team-card-header">
+            <div class="team-card-header-infos">
+                <h2 class="team-card-title">{{team.full_name}} [{{team.abbreviation}}]</h2>
+                <div>{{team.conference}}ern conference</div>
+            </div>
+        </div>
+        <hr>
+        <div class="team-card-footer">
+            <div>Scores of past 12 days :</div>
+            <div *ngIf="games">
+                <div *ngFor="let game of games">
+                    <b>{{game.home_team.abbreviation}}</b> {{game.home_team_score}} - {{game.visitor_team_score}} <b>{{game.visitor_team.abbreviation}}</b>
+                </div>
+            </div>
+            <a routerLink="/dashboard" id="backBtn"><< Back to all team stats</a>
+        </div>
+    </div>
+</div>
+

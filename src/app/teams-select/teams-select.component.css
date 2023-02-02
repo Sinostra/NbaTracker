@@ -1,0 +1,19 @@
+#teamInput {
+    padding: 10px 5px;
+}
+
+#trackBtn {
+    margin-left: 20px;
+    padding: 10px 10px;
+    background-color: #0c73d7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.team-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}

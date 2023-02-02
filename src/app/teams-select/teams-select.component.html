@@ -1,0 +1,11 @@
+<div *ngIf="teams.length">
+    <select #select id="teamInput">
+        <option *ngFor="let team of teams" value="{{team.id}}">{{team.full_name}}</option>
+    </select>
+    <button id="trackBtn" (click)="displayTeam(+select.value)">Track team</button>
+    
+    <div *ngIf="displayedTeams.length" class="team-card-wrapper">
+        <app-team-card *ngFor="let team of displayedTeams; let i = index" [inputTeam]="team" (deleteTeam)="onDeleteTeam(i)"></app-team-card>
+    </div>
+</div>
+<div *ngIf="!teams.length">Loading NBA teams...</div>

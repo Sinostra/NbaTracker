@@ -1,0 +1,39 @@
+.games-details-wrapper {
+    display: flex;
+}
+
+.team-card {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 20px 20px 0;
+}
+
+.team-card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-card-header-infos {
+    padding-right: 20px;
+}
+
+.team-card-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card-title {
+    margin: 0 0 5px;
+}
+
+#backBtn {
+    background-color: #308732;
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
